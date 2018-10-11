@@ -1,3 +1,9 @@
+wb-hwconf-manager (1.24.4) stable; urgency=medium
+
+  * fix infinity cycle when load with not-existing module in state file
+
+ -- Nikita Kulikov <n.kulikov@wirenboard.ru>  Wed, 10 Oct 2018 18:30:34 +0300
+
 wb-hwconf-manager (1.24.3) stable; urgency=medium
 
   * fix problems with modules unload order 

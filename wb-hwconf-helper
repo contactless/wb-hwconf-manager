@@ -69,7 +69,11 @@ config_apply_changes() {
 			[[ "$ACTION" == "-" ]] || continue
 			[[ -n "$MODULE" ]] && {
 				log "Deleting $SLOT:$MODULE"
-				module_run_hook del || continue
+				module_run_hook del || {
+					log_warning_msg "Deleting not-existing module from state file $SLOT:$MODULE"
+					sed -ri "/^$SLOT.*$/d" "$state"
+					continue
+				}
 				module_deinit "$SLOT"
 			}
 			sed -ri "/^$SLOT.*$/d" "$state"
