@@ -1,3 +1,9 @@
+wb-hwconf-manager (1.37.1) stable; urgency=medium
+
+  * renaming of wb67's mod3 and mod4 in dts
+
+ -- Vladimir Romanov <v.romanov@wirenboard.ru>  Fri, 13 Nov 2020 15:49:11 +0300
+
 wb-hwconf-manager (1.37.0) stable; urgency=medium
 
   * add support for wb67-wbmz3 slot (battery & supercap) in WirenBoard 6.7.x

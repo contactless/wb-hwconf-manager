@@ -3,10 +3,10 @@
 #define SLOT_RX		(CSI_PIXCLK,    4,	18)
 #define SLOT_RTS	(CSI_VSYNC, 4,	19)
 
-#define SLOT_TXRX_GPIO_PINCTRL &pinctrl_mod4_txrx_gpio
+#define SLOT_TXRX_GPIO_PINCTRL &pinctrl_mod3_txrx_gpio_new
 #define SLOT_TXRX_UART_PINCTRL &pinctrl_uart6_txrx
 
-#define SLOT_DE_GPIO_PINCTRL &pinctrl_mod4_de_gpio
+#define SLOT_DE_GPIO_PINCTRL &pinctrl_mod3_de_gpio_new
 #define SLOT_DE_UART_PINCTRL &pinctrl_uart6_ctsb
 
 #define SLOT_UART_ALIAS  &uart6

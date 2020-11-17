@@ -7,14 +7,14 @@
 #define SLOT_SCK	(CSI_DATA04,	4,	25)
 #define SLOT_CS		(CSI_DATA05,	4,	26)
 
-#define SLOT_SPI_GPIO_PINCTRL &pinctrl_mod3_spi_gpio
+#define SLOT_SPI_GPIO_PINCTRL &pinctrl_mod4_spi_gpio_new
 #define SLOT_SPI_SPI_PINCTRL &pinctrl_ecspi1
 
-#define SLOT_TXRX_GPIO_PINCTRL &pinctrl_mod3_txrx_gpio
+#define SLOT_TXRX_GPIO_PINCTRL &pinctrl_mod4_txrx_gpio_new
 #define SLOT_TXRX_UART_PINCTRL &pinctrl_uart7_txrx
-#define SLOT_I2C_EXPOSE_PINCTRL &pinctrl_mod3_i2c_gpio
+#define SLOT_I2C_EXPOSE_PINCTRL &pinctrl_mod4_i2c_gpio_new
 
-#define SLOT_DE_GPIO_PINCTRL &pinctrl_mod3_de_gpio
+#define SLOT_DE_GPIO_PINCTRL &pinctrl_mod4_de_gpio_new
 #define SLOT_DE_UART_PINCTRL &pinctrl_uart7_ctsb
 
 #define SLOT_UART_ALIAS	&uart7
